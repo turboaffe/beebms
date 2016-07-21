@@ -1,0 +1,30 @@
+Circuit: * Z:\home\martin\beebms\ltspice\trafo_test.asc
+
+Error on line 3 : l1 n003 n010 3µh ipk=3,3 rser=0.01
+	 Unknown parameter "3"
+Error on line 4 : l2 n009 n004 3µh ipk=3,3 rser=0.01
+	 Unknown parameter "3"
+Limiting rise time of source v3 to 1e-007
+Limiting fall time of source v3 to 1e-007
+Limiting rise time of source v2 to 1e-007
+Limiting fall time of source v2 to 1e-007
+Direct Newton iteration for .op point succeeded.
+
+Date: Thu Jul 21 22:14:29 2016
+Total elapsed time: 0.441 seconds.
+
+tnom = 27
+temp = 27
+method = modified trap
+totiter = 38567
+traniter = 38560
+tranpoints = 11108
+accept = 8412
+rejected = 2696
+matrix size = 31
+fillins = 2
+solver = Normal
+Matrix Compiler1: 1.51 KB object code size  0.8/0.5/[0.4]
+Matrix Compiler2: off  [0.4]/0.6/0.5
+
+
