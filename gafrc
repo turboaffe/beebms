@@ -1,0 +1,66 @@
+(component-library-search "../gschem-sym") 
+
+(use-modules (gschem hook))
+(use-modules (geda attrib))
+
+(display "ape55")
+
+(define (apeape attribute-list)
+    (display "ape rotate!")
+;    (display attribute-list)
+    (for-each (lambda (attribute) (display (attrib-value attribute))) (cdr attribute-list))
+;    (display (cdr attribute-list))
+)
+
+(define (test object-list)
+    (for-each (lambda (object)
+        (if (= (attrib? object) #t)
+             (display (attrib-value object))))
+    (object-list)
+    )
+)
+
+
+(define (select-callback attribute-list)
+    (display "call!")
+    (display ( net? (car attribute-list)))
+    
+    (if (attribute? (car attribute-list))
+    	(display (attrib-value (car attribute-list)))
+    	;(display (attrib-name (car attribute-list)))
+    	;(display (attrib-attachment (car attribute-list)))
+    	(display (object-attribs (car attribute-list)))
+    	;(display (inherited-attribs (car attribute-list)))
+    	
+   
+	)
+    
+    (if (net? (car attribute-list))
+    	(for-each
+    		(lambda (attribute)
+    			(display (attribute? attribute))
+    			(if (attribute? attribute)
+    				(display (attrib-value attribute))
+    		 	)
+		 	)
+	 	(cdr attribute-list))
+ 	)
+   
+    ;(for-each 
+    ;    (lambda (attribute)
+            ;(display (net? attribute))
+		    ;(display (line? attribute))
+		    ;(display (path? attribute))
+	;	    (if (attribute? attribute) 
+	;	    	(display (attrib-value attribute))
+	;	    )
+    ;    )
+    ;attribute-list)
+)
+
+
+
+(add-hook! rotate-objects-hook apeape)
+(add-hook! select-objects-hook select-callback)
+
+

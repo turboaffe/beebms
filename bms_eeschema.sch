@@ -1,0 +1,154 @@
+EESchema Schematic File Version 2
+LIBS:power
+LIBS:device
+LIBS:transistors
+LIBS:conn
+LIBS:linear
+LIBS:regul
+LIBS:74xx
+LIBS:cmos4000
+LIBS:adc-dac
+LIBS:memory
+LIBS:xilinx
+LIBS:special
+LIBS:microcontrollers
+LIBS:dsp
+LIBS:microchip
+LIBS:analog_switches
+LIBS:motorola
+LIBS:texas
+LIBS:intel
+LIBS:audio
+LIBS:interface
+LIBS:digital-audio
+LIBS:philips
+LIBS:display
+LIBS:cypress
+LIBS:siliconi
+LIBS:opto
+LIBS:atmel
+LIBS:contrib
+LIBS:valves
+LIBS:bms-cache
+EELAYER 24 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L GND #PWR2
+U 1 1 5436481B
+P 8850 4550
+F 0 "#PWR2" H 8850 4550 30  0001 C CNN
+F 1 "GND" H 8850 4480 30  0001 C CNN
+F 2 "" H 8850 4550 60  0000 C CNN
+F 3 "" H 8850 4550 60  0000 C CNN
+	1    8850 4550
+	1    0    0    -1  
+$EndComp
+$Comp
+L INDUCTOR L1
+U 1 1 54364863
+P 8400 3800
+F 0 "L1" V 8350 3800 40  0000 C CNN
+F 1 "INDUCTOR" V 8500 3800 40  0000 C CNN
+F 2 "" H 8400 3800 60  0000 C CNN
+F 3 "" H 8400 3800 60  0000 C CNN
+	1    8400 3800
+	1    0    0    -1  
+$EndComp
+$Comp
+L INDUCTOR L2
+U 1 1 54364877
+P 7800 3800
+F 0 "L2" V 7750 3800 40  0000 C CNN
+F 1 "INDUCTOR" V 7900 3800 40  0000 C CNN
+F 2 "" H 7800 3800 60  0000 C CNN
+F 3 "" H 7800 3800 60  0000 C CNN
+	1    7800 3800
+	-1   0    0    1   
+$EndComp
+$Comp
+L BATTERY BT1
+U 1 1 543648CE
+P 9350 3750
+F 0 "BT1" H 9350 3950 50  0000 C CNN
+F 1 "BATTERY" H 9350 3560 50  0000 C CNN
+F 2 "" H 9350 3750 60  0000 C CNN
+F 3 "" H 9350 3750 60  0000 C CNN
+	1    9350 3750
+	0    1    1    0   
+$EndComp
+$Comp
+L R R2
+U 1 1 543648E2
+P 8400 2950
+F 0 "R2" V 8480 2950 40  0000 C CNN
+F 1 "R" V 8407 2951 40  0000 C CNN
+F 2 "" V 8330 2950 30  0000 C CNN
+F 3 "" H 8400 2950 30  0000 C CNN
+	1    8400 2950
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8400 3500 8400 3200
+Wire Wire Line
+	9350 2500 9350 3450
+Wire Wire Line
+	9350 4400 9350 4050
+Wire Wire Line
+	8400 4400 9350 4400
+Wire Wire Line
+	8400 4400 8400 4100
+Wire Wire Line
+	8850 4400 8850 4550
+Connection ~ 8850 4400
+$Comp
+L R R1
+U 1 1 543649B2
+P 7800 2950
+F 0 "R1" V 7880 2950 40  0000 C CNN
+F 1 "R" V 7807 2951 40  0000 C CNN
+F 2 "" V 7730 2950 30  0000 C CNN
+F 3 "" H 7800 2950 30  0000 C CNN
+	1    7800 2950
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7800 3500 7800 3200
+Wire Wire Line
+	7800 2700 7800 2500
+Wire Wire Line
+	9350 2500 8400 2500
+Wire Wire Line
+	8400 2500 8400 2700
+$Comp
+L GND #PWR1
+U 1 1 543649EB
+P 7800 4550
+F 0 "#PWR1" H 7800 4550 30  0001 C CNN
+F 1 "GND" H 7800 4480 30  0001 C CNN
+F 2 "" H 7800 4550 60  0000 C CNN
+F 3 "" H 7800 4550 60  0000 C CNN
+	1    7800 4550
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7800 4100 7800 4550
+Wire Wire Line
+	7800 4400 7250 4400
+Wire Wire Line
+	7250 4400 7250 2500
+Wire Wire Line
+	7250 2500 7800 2500
+Connection ~ 7800 4400
+$EndSCHEMATC

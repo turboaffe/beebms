@@ -1,0 +1,8 @@
+INPUT	Q201-2 
+unnamed_net4	CONN201-1 Q201-1 R201-2 
+Vee	R201-1 U101-4 
+Vcc	Q201-3 U101-8 
+GND	CONN201-2 U101-3 
+unnamed_net3	U101-1 U101-6 
+unnamed_net2	U101-5 U101-1 R103-2 
+unnamed_net1	U101-2 R103-1 R102-2 R101-2 

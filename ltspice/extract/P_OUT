@@ -1,0 +1,15 @@
+# Info #
+Name:P_OUT
+Symbol:ZP_OUT
+Unit:W
+Analysis type:TRAN
+Definition:Output power at the fundamental harmonic.
+Note:
+#
+
+# Commands #
+.meas #P_OUT# rms V(n002)*I(R3)
+#
+
+# Post Processing #
+#
